@@ -1,0 +1,44 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "features": {
+    "ghcr.io/va-h/devcontainers-features/uv:1": {
+      "shellautocompletion": true
+    }
+  },
+  "postCreateCommand": "uv sync",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-spanish",
+        "matangover.mypy",
+        "ms-python.python",
+        "tamasfe.even-better-toml",
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        },
+        "cursor.general.enableShadowWorkspace": true,
+        "cSpell.language": "en,es",
+        "cSpell.words": [
+          "devcontainers",
+          "spanish",
+          "matangover",
+          "mypy",
+          "tamasfe",
+          "shellautocompletion",
+          "charliermarsh",
+          "matplotlib",
+          "numpy"
+        ],
+        "cSpell.ignorePaths": [
+          "uv.lock"
+        ]
+      }
+    }
+  }
+}
